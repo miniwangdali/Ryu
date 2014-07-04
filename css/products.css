@@ -1,0 +1,50 @@
+@charset "utf-8";
+.prolist{
+	margin:0 auto;
+	float:left;
+	width:1130px;
+	padding-left:160px;
+}
+.prolist .director{
+	float:left;
+	margin: 35px 50px 0 50px;
+	width:21px;
+	cursor:pointer;
+}
+.prolist .products{
+	float:left;
+	margin:5px;
+	width:200px;
+}
+.prolist .products .p{
+	clear:both;
+	margin:10px 0 0 0;
+	max-width:200px;
+	
+}
+.prolist .products .b{
+	clear:both;
+	position:relative;
+	top:10px;
+	left:80px;;
+	height:21px;
+	width:45px;
+}
+.briefinfo{
+	clear:both;
+	margin:20px auto;
+	padding:20px;
+}
+.briefinfo img{
+	margin:0 auto;
+	max-width:1090px;
+}
+.slide{
+	clear:both;
+	margin:20px;
+	padding:15px 0 15px 0;
+	border-top:solid 2px #dfdfdf;
+}
+.slide img{
+	max-width:1100px;
+}
