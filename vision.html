@@ -5,10 +5,13 @@
 <title>Ryu Produtions Vision</title>
 <link href="css/base.css" rel="stylesheet" type="text/css">
 <link href="css/vision.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="http://static.hdslb.com/js/jquery.min.js"></script>
+<script type="text/javascript" src="js/scrollTo.js"></script>
 <script type="text/javascript">
 var currentSlide = 0;
+var slides = new Array("#slide_0", "#slide_1", "#slide_2", "#slide_3", "#slide_4");
 var scrollHeight = new Array(100, 768, 1322, 1751, 2229);
-var pageHeight = new Array(190, 858, 1412, 1841, 2319);
+var pageHeight = new Array(189, 867, 1441, 1892, 2319);
 document.addEventListener("mousewheel",function(e){
 	e = e || window.event;
 	if(e.wheelDelta){
@@ -29,7 +32,7 @@ document.addEventListener("mousewheel",function(e){
 				currentSlide = 4;
 			}
 			if(currentSlide < 5){
-				window.scrollTo(0, scrollHeight[currentSlide]);
+				$.scrollTo(slides[currentSlide], 800);
 				currentSlide = currentSlide + 1;
 			}
 			
@@ -110,24 +113,24 @@ document.addEventListener("mousewheel",function(e){
         <!-- introduction -->
         <div>
         	<!-- brief info-->
-            <div class="briefinfo">
+            <div id="slide_0" class="briefinfo">
             	<img src="image/vision slide1.png" />
                 <div class="clearframe"></div>
             </div>
             <!-- slide -->
-            <div tag="slide_1" class="slide">
+            <div id="slide_1" class="slide">
             	<img src="image/vision slide2.png" />
                 <div class="clearframe"></div>
             </div>
-            <div tag="slide_1" class="slide">
+            <div id="slide_2" class="slide">
             	<img src="image/vision slide3.png" />
                 <div class="clearframe"></div>
             </div>
-            <div tag="slide_1" class="slide">
+            <div id="slide_3" class="slide">
             	<img src="image/vision slide4.png" />
                 <div class="clearframe"></div>
             </div>
-            <div tag="slide_1" class="slide">
+            <div id="slide_4" class="slide">
             	<img src="image/vision slide5.png" />
                 <div class="clearframe"></div>
             </div>
