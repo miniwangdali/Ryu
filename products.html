@@ -28,8 +28,8 @@ document.addEventListener("mousewheel",function(e){
 			}else if( window.pageYOffset >= pageHeight[2] && window.pageYOffset < pageHeight[3] ){
 				currentSlide = 3;
 			}
-			if(currentSlide < 4){
-				$.scrollTo(slides[currentSlide], 800);
+			if(currentSlide < 4 && currentSlide > 0){
+				$.scrollTo(slides[currentSlide], 1000);
 				//alert(window.pageYOffset);
 				currentSlide = currentSlide + 1;
 			}
