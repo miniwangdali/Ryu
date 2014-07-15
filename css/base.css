@@ -1,14 +1,5 @@
 ﻿@charset "utf-8";
 *{ margin:5 auto; padding:0;}
-@font-face {
-font-family: "BankGothic Md BT";
-src: url('BankGothic Md BT.eot');
-src: local('BankGothic Md BT'),
-local('BankGothic Md BT'), 
-url('/BankGothic Md BT.woff') format('woff'), 
-url('/BankGothic Md BT.ttf') format('truetype'), 
-url('/BankGothic Md BT.svg#BankGothic Md BT') format('svg');
-}
 body{
 	margin:0 auto;
 	padding:0;
@@ -74,7 +65,6 @@ body{
 	margin:0 auto;
 	width:72px;
 	background:#f1eff0;
-	
 }
 .headframe .headline .titlebar .language .unselected div{
 	padding:2px;
@@ -100,6 +90,7 @@ body{
 .headframe .headline .titlebar .follow div{
 	float:right;
 	margin: 0 10px 0 0;
+	font-family: "微软雅黑", "华文细黑";
 }
 .headframe .headline .titlebar .follow img{
 	margin: 0 2px 0 2px;
@@ -112,9 +103,10 @@ body{
 	margin:0;
 	padding: 5px;
 	overflow:hidden;
-	font-family: "Helvelow", "Technic", "Arial";
-	font-weight:bold;
+	font-family: "微軟正黑體", "微软雅黑","Helvelow", "Technic", "Arial";
+	font-weight:900;
 	font-size:18px;
+	
 }
 .headframe .headline ul li{
 	width:240px;
@@ -124,35 +116,62 @@ body{
 }
 .headframe .headline ul li .first{
 	margin: 10px 0 10px 50px;
-	padding: 15px;
+	padding: 15px 15px 15px 37px;
 	color: #6baaf2;
 	border: solid 2px #6baaf2;
 	border-radius: 13px;
 	cursor:pointer;
+	letter-spacing: 1.3em;
+}
+.headframe .headline ul li img{
+	position:relative; 
+	top: -32px; 
+	left: 25px; 
+	max-height:22px;
+}
+
+.headframe .headline ul li .first:hover{
+	background-color:#6baaf2;
+	color:#ffffff;
 }
 .headframe .headline ul li .second{
 	margin: 10px 0 10px 50px;
-	padding: 15px;
+	padding: 15px 15px 15px 37px;
 	color: #6bcdf1;
 	border: solid 2px #6bcdf1;
 	border-radius: 13px;
 	cursor:pointer;
+	letter-spacing: 1.3em;
+}
+.headframe .headline ul li .second:hover{
+	background-color:#6bcdf1;
+	color:#ffffff;
 }
 .headframe .headline ul li .third{
 	margin: 10px 0 10px 50px;
-	padding: 15px;
+	padding: 15px 15px 15px 37px;
 	color: #71e4f2;
 	border: solid 2px #71e4f2;
 	border-radius: 13px;
 	cursor:pointer;
+	letter-spacing: 1.3em;
+}
+.headframe .headline ul li .third:hover{
+	background-color:#71e4f2;
+	color:#ffffff;
 }
 .headframe .headline ul li .fourth{
 	margin: 10px 0 10px 50px;
-	padding: 15px;
+	padding: 15px 15px 15px 28px;
 	color: #4ae8d2;
 	border: solid 2px #4ae8d2;
 	border-radius: 13px;
 	cursor:pointer;
+	letter-spacing: 0.6em;
+}
+.headframe .headline ul li .fourth:hover{
+	background-color:#4ae8d2;
+	color:#ffffff;
 }
 .mainframe{
 	margin:0 auto;
@@ -176,12 +195,30 @@ body{
 	cursor:pointer;
 }
 .footframe{
-	margin:40px;
+	margin:30px;
 	clear:both;
 	text-align:center;
 	color:#adadad;
 	font-family: "Kalinga", "Arial";
 	font-size:12px;
+}
+.footframe .copyright{
+	margin: 10px;
+}
+.footframe .contact{
+	
+}
+.footframe .contact a{
+	text-decoration:none;
+	font-family:"微軟正黑體", "微软雅黑";
+	font-size: 14px;
+	color:#adadad;
+}
+.footframe .contact a blue{
+	color:#6baaf2;
+}
+.footframe .contact a:hover{
+	text-decoration:underline;
 }
 .clearframe{
 	clear:both;
