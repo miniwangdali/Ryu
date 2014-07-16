@@ -40,11 +40,12 @@ $(document).ready(function(){
 </script>
 <script type="text/javascript">
 var currentSlide = 0;
-var slides = new Array("#slide_0", "#slide_1", "#slide_2", "#slide_3", "#slide_4");
+var scrolling = false;
+var slides = new Array("#head", "#slide_0", "#slide_1", "#slide_2", "#slide_3", "#slide_4");
 var pageHeight = new Array(189, 867, 1441, 1892, 2319);
 document.addEventListener("mousewheel",function(e){
  	e = e || window.event;
-	if(currentSlide != 999){
+	/*if(currentSlide != 999){
 		if( window.pageYOffset < pageHeight[0]){
 					currentSlide = 0;
  				}else if( window.pageYOffset >= pageHeight[0] && window.pageYOffset < pageHeight[1] ){
@@ -56,22 +57,30 @@ document.addEventListener("mousewheel",function(e){
 				}else if( window.pageYOffset >= pageHeight[3] && window.pageYOffset < pageHeight[4] ){
  					currentSlide = 4;
  				}
-	}
+	}*/
  	if(e.wheelDelta){
- 		if(e.wheelDelta > 0){
- 			//向上滚动
-			
- 		}else{
- 			//向下滚动
- 			if(currentSlide < 5){
-				temp = currentSlide;
-				currentSlide = 999;
-				$.scrollTo(slides[temp], 800);
- 				currentSlide = temp + 1;
- 			}
-			
- 		}
- 	}
+		event.preventDefault();
+ 		if(!scrolling){
+			scrolling = true;
+			if(e.wheelDelta > 0){
+ 				//向上滚动
+				if(currentSlide > 0){
+					currentSlide = currentSlide - 1;
+					$.scrollTo(slides[currentSlide], 800, function(){
+						scrolling = false;
+					});
+				}
+ 			}else{
+ 				//向下滚动
+				if(currentSlide < 6){
+					$.scrollTo(slides[currentSlide], 800, function(){
+						scrolling = false;
+					});
+ 					currentSlide = currentSlide + 1;
+ 				}
+	 		}
+		}
+	}
  }, false);
 function hover(id){
 	switch(id){
@@ -99,7 +108,7 @@ function recover(id){
 			document.getElementById("2").src = "image/tagsecond.png";
 			break;
 		case "3":
-			document.getElementById("3").src = "image/tagthird.png";
+			document.getElementById("3").src = "image/tagthirdactive.png";
 			break;
 		case "4":
 			document.getElementById("4").src = "image/tagfourth.png";
@@ -111,7 +120,7 @@ function recover(id){
 
 <body>
 <!-- base frame -->
-<div class="baseframe">
+<div id="head" class="baseframe">
 	<!-- head frame -->
     <div class="headframe">
     	<!-- logo -->
@@ -161,7 +170,7 @@ function recover(id){
                     </li>
                     <li>
                     	<div class="third">理念</div>
-                        <img id="3" state="static" class="thirdimg" src="image/tagthird.png" />
+                        <img id="3" state="static" class="thirdimg" src="image/tagthirdactive.png" />
                     </li>
                     <li>
                     	<div class="fourth">关于我们</div>

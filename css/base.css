@@ -133,6 +133,7 @@ body{
 .headframe .headline ul li .first:hover{
 	background-color:#6baaf2;
 	color:#ffffff;
+	text-shadow: 0 0 15px #ffffff;
 }
 .headframe .headline ul li .second{
 	margin: 10px 0 10px 50px;
@@ -146,6 +147,7 @@ body{
 .headframe .headline ul li .second:hover{
 	background-color:#6bcdf1;
 	color:#ffffff;
+	text-shadow: 0 0 15px #ffffff;
 }
 .headframe .headline ul li .third{
 	margin: 10px 0 10px 50px;
@@ -159,6 +161,7 @@ body{
 .headframe .headline ul li .third:hover{
 	background-color:#71e4f2;
 	color:#ffffff;
+	text-shadow: 0 0 15px #ffffff;
 }
 .headframe .headline ul li .fourth{
 	margin: 10px 0 10px 50px;
@@ -172,6 +175,7 @@ body{
 .headframe .headline ul li .fourth:hover{
 	background-color:#4ae8d2;
 	color:#ffffff;
+	text-shadow: 0 0 15px #ffffff;
 }
 .mainframe{
 	margin:0 auto;
