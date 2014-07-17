@@ -2,44 +2,11 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Ryu Productions Home</title>
+<title>Ryu Production Contact</title>
 <link href="css/base.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="http://static.hdslb.com/js/jquery.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
-	var currentPoint = "point_1";
-	var currentSlide = "slide_1";
-	var slides = new Array("image/web main1.png", "image/web main2.png", 		"image/web main3.png");
-	$("img#point_1").click(function(){
-		if( currentPoint == "point_1"){
-			return;
-		}else{
-			$("img#slide_1").fadeIn(1000);
-			$("img#" + currentSlide).fadeOut(1000);
-			currentPoint = "point_1";
-			currentSlide = "slide_1";
-		}
-	});
-	$("img#point_2").click(function(){
-		if( currentPoint == "point_2"){
-			return;
-		}else{
-			$("img#slide_2").fadeIn(1000);
-			$("img#" + currentSlide).fadeOut(1000);
-			currentPoint = "point_2";
-			currentSlide = "slide_2";
-		}
-	});
-	$("img#point_3").click(function(){
-		if( currentPoint == "point_3"){
-			return;
-		}else{
-			$("img#slide_3").fadeIn(1000);
-			$("img#" + currentSlide).fadeOut(1000);
-			currentPoint = "point_3";
-			currentSlide = "slide_3";
-		}
-	});
 	$("div.first").mouseenter(function(e) {
         hover("1");
     });
@@ -69,18 +36,6 @@ $(document).ready(function(){
 	
 </script>
 <script type="text/javascript">
-var currentPoint = "point_1";
-function change(id, slide_id){
-	if( id == currentPoint ){
-		return;
-	}else{
-		document.getElementById(currentPoint).state = "off";
-		document.getElementById(id).state = "on";
-		document.getElementById(currentPoint).src = "image/selector_off.png";
-		document.getElementById(id).src = "image/selector_on.png";
-		currentPoint = id;
-	}
-}
 function hover(id){
 	switch(id){
 		case "1":
@@ -105,7 +60,7 @@ function hover(id){
 function recover(id){
 	switch(id){
 		case "1":
-			document.getElementById("1").src = "image/tagfirstactive.png";
+			document.getElementById("1").src = "image/tagfirst.png";
 			document.getElementById("tag1").src = "image/hometext.png";
 			break;
 		case "2":
@@ -124,6 +79,7 @@ function recover(id){
 }
 </script>
 </head>
+
 <body>
 <!-- base frame -->
 <div class="baseframe">
@@ -139,7 +95,7 @@ function recover(id){
             <div class="titlebar">
             	<!-- title -->
                 <div class="title"><!-- Ryu Productions -->
-                	<img src="image/title.png" style="width:345px; height:20px;" />
+                    <img src="image/title.png" style="width:345px; height:20px;" />
                 </div>
                 <!-- follow -->
                 <div class="follow">
@@ -172,7 +128,7 @@ function recover(id){
                     	<div class="first">
                         	<img id="tag1" src="image/hometext.png" />
                         </div>
-                        <img id="1" state="in" class="firstimg" src="image/tagfirstactive.png" />
+                        <img id="1" state="in" class="firstimg" src="image/tagfirst.png" />
                     </li>
                     <li>
                     	<div class="second">
@@ -201,16 +157,7 @@ function recover(id){
     </div>
     <!-- main frame -->
     <div class="mainframe">
-    	<div style="width:1130px; height:524px;">
-    	<img id="slide_1" src="image/web main1.png" style="position:absolute;"/>
-        <img id="slide_2" src="image/web main2.png" style="position:absolute; display:none;"/>
-        <img id="slide_3" src="image/web main3.png" style="position:absolute; display:none"/>
-        </div>
-        <div class="selector">
-        	<img id="point_1" state="on" onClick="change('point_1', 0)" src="image/selector_on.png" />
-            <img id="point_2" state="off" onClick="change('point_2', 1)" src="image/selector_off.png" />
-            <img id="point_3" state="off" onClick="change('point_3', 2)" src="image/selector_off.png" />
-        </div>
+
         <div class="clearframe"></div>
     </div>
     <!-- foot frame -->
@@ -219,7 +166,6 @@ function recover(id){
         </div>
     	<div class="copyright">© 2014 RYU PRODUCTIONS CO.,LTD All Rights Reserved.
         </div>
-        
     </div>
 </div>
 </body>

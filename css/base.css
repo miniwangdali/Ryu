@@ -116,12 +116,19 @@ body{
 }
 .headframe .headline ul li .first{
 	margin: 10px 0 10px 50px;
-	padding: 15px 15px 15px 37px;
+	padding: 8px 15px 8px 13px;
 	color: #6baaf2;
 	border: solid 2px #6baaf2;
 	border-radius: 13px;
 	cursor:pointer;
 	letter-spacing: 1.3em;
+}
+.headframe .headline ul li .first img{
+	position:relative;
+	top:0px;
+	left:0px;
+	width:101px;
+	max-height:none;
 }
 .headframe .headline ul li img{
 	position:relative; 
@@ -137,12 +144,19 @@ body{
 }
 .headframe .headline ul li .second{
 	margin: 10px 0 10px 50px;
-	padding: 15px 15px 15px 37px;
+	padding: 8px 13px 8px 13px;
 	color: #6bcdf1;
 	border: solid 2px #6bcdf1;
 	border-radius: 13px;
 	cursor:pointer;
 	letter-spacing: 1.3em;
+}
+.headframe .headline ul li .second img{
+	position:relative;
+	top:0px;
+	left:0px;
+	width:101px;
+	max-height:none;
 }
 .headframe .headline ul li .second:hover{
 	background-color:#6bcdf1;
@@ -151,12 +165,19 @@ body{
 }
 .headframe .headline ul li .third{
 	margin: 10px 0 10px 50px;
-	padding: 15px 15px 15px 37px;
+	padding: 8px 15px 8px 13px;
 	color: #71e4f2;
 	border: solid 2px #71e4f2;
 	border-radius: 13px;
 	cursor:pointer;
 	letter-spacing: 1.3em;
+}
+.headframe .headline ul li .third img{
+	position:relative;
+	top:0px;
+	left:0px;
+	width:101px;
+	max-height:none;
 }
 .headframe .headline ul li .third:hover{
 	background-color:#71e4f2;
@@ -165,12 +186,19 @@ body{
 }
 .headframe .headline ul li .fourth{
 	margin: 10px 0 10px 50px;
-	padding: 15px 15px 15px 28px;
+	padding: 8px 13px 8px 13px;
 	color: #4ae8d2;
 	border: solid 2px #4ae8d2;
 	border-radius: 13px;
 	cursor:pointer;
 	letter-spacing: 0.6em;
+}
+.headframe .headline ul li .fourth img{
+	position:relative;
+	top:0px;
+	left:0px;
+	width:101px;
+	max-height:none;
 }
 .headframe .headline ul li .fourth:hover{
 	background-color:#4ae8d2;

@@ -41,15 +41,19 @@ function hover(id){
 	switch(id){
 		case "1":
 			document.getElementById("1").src = "image/tagfirstover.png";
+			document.getElementById("tag1").src = "image/hometextover.png";
 			break;
 		case "2":
 			document.getElementById("2").src = "image/tagsecondover.png";
+			document.getElementById("tag2").src = "image/producttextover.png";
 			break;
 		case "3":
 			document.getElementById("3").src = "image/tagthirdover.png";
+			document.getElementById("tag3").src = "image/visiontextover.png";
 			break;
 		case "4":
 			document.getElementById("4").src = "image/tagfourthover.png";
+			document.getElementById("tag4").src = "image/abouttextover.png";
 			break;
 	}
 	
@@ -58,15 +62,19 @@ function recover(id){
 	switch(id){
 		case "1":
 			document.getElementById("1").src = "image/tagfirst.png";
+			document.getElementById("tag1").src = "image/hometext.png";
 			break;
 		case "2":
 			document.getElementById("2").src = "image/tagsecond.png";
+			document.getElementById("tag2").src = "image/producttext.png";
 			break;
 		case "3":
 			document.getElementById("3").src = "image/tagthird.png";
+			document.getElementById("tag3").src = "image/visiontext.png";
 			break;
 		case "4":
 			document.getElementById("4").src = "image/tagfourthactive.png";
+			document.getElementById("tag4").src = "image/abouttext.png";
 			break;
 	}
 }
@@ -93,11 +101,13 @@ function recover(id){
                 <!-- follow -->
                 <div class="follow">
                     <div>
-                    	<img src="image/twitter.png" />
-                        <img src="image/renren.png" />
-                        <img src="image/facebook.png" />
+                    	<img src="image/facebook.png" />
+                        <img src="image/twitter.png" />
+                        <img src="image/weibo.png" />
                     </div>
-                    <div>Follow</div>
+                    <div>
+                    	<img src="image/followtext.png" style="margin-top:2px; max-height:13px; cursor:default;"/>
+                    </div>
 
                 </div>
                 <!-- language -->
@@ -116,19 +126,27 @@ function recover(id){
             <div>
             	<ul>
                 	<li>
-                    	<div class="first">主页</div>
+                    	<div class="first">
+                        	<img id="tag1" src="image/hometext.png" />
+                        </div>
                         <img id="1" state="in" class="firstimg" src="image/tagfirst.png" />
                     </li>
                     <li>
-                    	<div class="second">产品</div>
+                    	<div class="second">
+                        	<img id="tag2" src="image/producttext.png" />
+                        </div>
                         <img id="2" state="static" class="secondimg" src="image/tagsecond.png" />
                     </li>
                     <li>
-                    	<div class="third">理念</div>
+                    	<div class="third">
+                        	<img id="tag3" src="image/visiontext.png" />
+                        </div>
                         <img id="3" state="static" class="thirdimg" src="image/tagthird.png" />
                     </li>
                     <li>
-                    	<div class="fourth">关于我们</div>
+                    	<div class="fourth">
+                        	<img id="tag4" src="image/abouttext.png" />
+                        </div>
                         <img id="4" state="static" class="fourthimg" src="image/tagfourthactive.png" />
                     </li>
                 </ul>
@@ -141,7 +159,9 @@ function recover(id){
     <!-- main frame -->
     <div class="mainframe">
     	<img src="image/about.png" />
-        <div class="content"><p>龍创国际网络科技有限公司（RYU PRODUCTIONS CO.,LTD）成立于2013年12月。本公司致力于开发可以提高人们生活品质的游戏作品和<br />游戏相关服务，主要业务是策划并开发以苹果iOS，任天堂3DS为平台的原创游戏，以及引进日本的优秀游戏到中国大陆和香港市场。我们的团队和日本的很多游戏公司有着很好的商业合作关系，拥有多个日本游戏在中国大陆和香港发行的版权。<br />现在本公司在开发多个游戏项目以及游戏相关的网络社交服务项目。</p></div>
+        <div class="content"><!-- <p>龍创国际网络科技有限公司（RYU PRODUCTIONS CO.,LTD）成立于2013年12月。本公司致力于开发可以提高人们生活品质的游戏作品和<br />游戏相关服务，主要业务是策划并开发以苹果iOS，任天堂3DS为平台的原创游戏，以及引进日本的优秀游戏到中国大陆和香港市场。我们的团队和日本的很多游戏公司有着很好的商业合作关系，拥有多个日本游戏在中国大陆和香港发行的版权。<br />现在本公司在开发多个游戏项目以及游戏相关的网络社交服务项目。</p> -->
+        	<img src="image/about us.png" />
+        </div>
         <div class="clearframe"></div>
     </div>
     <!-- foot frame -->

@@ -42,15 +42,19 @@ function hover(id){
 	switch(id){
 		case "1":
 			document.getElementById("1").src = "image/tagfirstover.png";
+			document.getElementById("tag1").src = "image/hometextover.png";
 			break;
 		case "2":
 			document.getElementById("2").src = "image/tagsecondover.png";
+			document.getElementById("tag2").src = "image/producttextover.png";
 			break;
 		case "3":
 			document.getElementById("3").src = "image/tagthirdover.png";
+			document.getElementById("tag3").src = "image/visiontextover.png";
 			break;
 		case "4":
 			document.getElementById("4").src = "image/tagfourthover.png";
+			document.getElementById("tag4").src = "image/abouttextover.png";
 			break;
 	}
 	
@@ -59,15 +63,19 @@ function recover(id){
 	switch(id){
 		case "1":
 			document.getElementById("1").src = "image/tagfirst.png";
+			document.getElementById("tag1").src = "image/hometext.png";
 			break;
 		case "2":
 			document.getElementById("2").src = "image/tagsecondactive.png";
+			document.getElementById("tag2").src = "image/producttext.png";
 			break;
 		case "3":
 			document.getElementById("3").src = "image/tagthird.png";
+			document.getElementById("tag3").src = "image/visiontext.png";
 			break;
 		case "4":
 			document.getElementById("4").src = "image/tagfourth.png";
+			document.getElementById("tag4").src = "image/abouttext.png";
 			break;
 	}
 }
@@ -94,11 +102,13 @@ function recover(id){
                 <!-- follow -->
                 <div class="follow">
                     <div>
-                    	<img src="image/twitter.png" />
-                        <img src="image/renren.png" />
-                        <img src="image/facebook.png" />
+                    	<img src="image/facebook.png" />
+                        <img src="image/twitter.png" />
+                        <img src="image/weibo.png" />
                     </div>
-                    <div>Follow</div>
+                    <div>
+                    	<img src="image/followtext.png" style="margin-top:2px; max-height:13px; cursor:default;"/>
+                    </div>
 
                 </div>
                 <!-- language -->
@@ -117,19 +127,27 @@ function recover(id){
             <div>
             	<ul>
                 	<li>
-                    	<div class="first">主页</div>
+                    	<div class="first">
+                        	<img id="tag1" src="image/hometext.png" />
+                        </div>
                         <img id="1" state="in" class="firstimg" src="image/tagfirst.png" />
                     </li>
                     <li>
-                    	<div class="second">产品</div>
+                    	<div class="second">
+                        	<img id="tag2" src="image/producttext.png" />
+                        </div>
                         <img id="2" state="static" class="secondimg" src="image/tagsecondactive.png" />
                     </li>
                     <li>
-                    	<div class="third">理念</div>
+                    	<div class="third">
+                        	<img id="tag3" src="image/visiontext.png" />
+                        </div>
                         <img id="3" state="static" class="thirdimg" src="image/tagthird.png" />
                     </li>
                     <li>
-                    	<div class="fourth">关于我们</div>
+                    	<div class="fourth">
+                        	<img id="tag4" src="image/abouttext.png" />
+                        </div>
                         <img id="4" state="static" class="fourthimg" src="image/tagfourth.png" />
                     </li>
                 </ul>
