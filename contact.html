@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <title>Ryu Production Contact</title>
 <link href="css/base.css" rel="stylesheet" type="text/css">
+<link href="css/contact.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="http://static.hdslb.com/js/jquery.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
@@ -31,11 +32,19 @@ $(document).ready(function(){
 	$("div.fourth").mouseleave(function(e) {
         recover("4");
     });
+	$("#date").text(showdate());
 });
 
 	
 </script>
 <script type="text/javascript">
+var d=new Date()
+var day=d.getDate()
+var month=d.getMonth() + 1
+var year=d.getFullYear()
+function showdate(){
+	return year + " / " + month + " / " + day;
+}
 function hover(id){
 	switch(id){
 		case "1":
@@ -105,7 +114,7 @@ function recover(id){
                         <img src="image/weibo.png" />
                     </div>
                     <div>
-                    	<img src="image/followtext.png" style="margin-top:2px; max-height:13px; cursor:default;"/>
+                    	关注龙创
                     </div>
 
                 </div>
@@ -157,12 +166,35 @@ function recover(id){
     </div>
     <!-- main frame -->
     <div class="mainframe">
-
+        <img class="contactus" src="image/contact us.png" />
+        <div class="email"><blue>电子邮箱：</blue>ryuproductions2013@yahoo.co.jp
+        </div>
+        <div class="address"><blue>地址：</blue>香港九龙旺角弥顿道707-713号 银高国际大厦 9楼 A30室</div>
+        <div>
+        	<div class="t">
+            	<div>姓名</div>
+                <div>邮箱</div>
+                <div>信息</div>
+                <div class="clearframe"></div>
+            </div>
+            <div class="box">
+            	<div><input class="singleline" type="text" /></div>
+                <div><input class="singleline" type="text" /></div>
+                <div><textarea></textarea></div>
+                <div class="clearframe"></div>
+            </div>
+            <div class="clearframe"></div>
+        </div>
+        <div>
+        	<div class="datet">日期</div>
+            <div id="date" class="datem">----/--/--</div>
+            <div class="send">发送</div>
+        </div>
         <div class="clearframe"></div>
     </div>
     <!-- foot frame -->
     <div class="footframe">
-    	<div class="contact"><a href=""><blue>联系我们：</blue>ryuproductions2013@yahoo.co.jp</a>
+    	<div class="contact"><a href="contact.html"><blue>联系我们：</blue>ryuproductions2013@yahoo.co.jp</a>
         </div>
     	<div class="copyright">© 2014 RYU PRODUCTIONS CO.,LTD All Rights Reserved.
         </div>

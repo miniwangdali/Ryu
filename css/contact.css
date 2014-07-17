@@ -1,0 +1,88 @@
+@charset "utf-8";
+.mainframe .contactus{
+	clear:both;
+	padding: 0 130px 50px 140px;
+	width: 820px;
+}
+.mainframe .email{
+	clear:both;
+	margin: 0 0 20px 0;
+	font-family:"微軟正黑體", "微软雅黑";
+	font-size: 18px;
+	color:#adadad;
+	text-align:center;
+}
+.mainframe .email blue{
+	color:#6baaf2;
+}
+.mainframe .address{
+	margin:0 0 30px 0;
+	clear:both;
+	font-family:"微軟正黑體", "微软雅黑";
+	font-size: 18px;
+	color:#adadad;
+	text-align:center;
+}
+.mainframe .address blue{
+	color:#6baaf2;
+}
+.mainframe .t{
+	float:left;
+	margin: 20px 0 20px 280px; 
+	font-family:"微軟正黑體", "微软雅黑", "BankGothic Lt BT", "Arial";
+	font-size:18px;
+	text-align:center;
+}
+.mainframe .t div{
+	margin: 5px 0 15px 0;
+}
+.mainframe .box{
+	float:left;
+	margin: 20px 0 0 0;
+	
+}
+.mainframe .box div{
+	margin: 5px 5px 10px 20px;
+}
+.mainframe .box input{
+	margin:2px auto;
+	width:450px;
+	border:solid 1px #dfdfdf;
+	border-radius:8px;
+	padding:2px 3px 2px 3px;
+}
+.mainframe .box textarea{
+	margin:2px auto;
+	width:450px;
+	border:solid 1px #dfdfdf;
+	border-radius:8px;
+	padding:2px 3px 2px 3px;
+	height:200px;
+}
+.mainframe .datet{
+	float:left;
+	margin: 0 0 20px 280px; 
+	font-family:"微軟正黑體", "微软雅黑", "BankGothic Lt BT", "Arial";
+	font-size:18px;
+	color:#7e7e7e;
+}
+.mainframe .datem{
+	float:left;
+	margin: 0 0 20px 20px; 
+	font-family:"微軟正黑體", "微软雅黑", "BankGothic Lt BT", "Arial";
+	font-size:18px;
+	color:#7e7e7e;
+}
+.mainframe .send{
+	float:right;
+	margin:0 335px 0 0;
+	padding:3px 10px 3px 20px;
+	font-family:"微軟正黑體", "微软雅黑", "BankGothic Lt BT", "Arial";
+	font-size:16px;
+	color:#ffffff;
+	border:solid 0 #fffff;
+	border-radius:8px;
+	background-color:#6baaf2;
+	letter-spacing:0.8em;
+	cursor:pointer;
+}
